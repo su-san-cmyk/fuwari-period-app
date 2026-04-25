@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont,
+    'Hiragino Sans', 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+  background: linear-gradient(160deg, #fff0f5 0%, #fdf4ff 50%, #fff5f0 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100dvh;
+  max-width: 430px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ふわふわボタン */
+.btn-primary {
+  background: linear-gradient(135deg, #ff9eb5 0%, #fb7185 100%);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 28px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(251, 113, 133, 0.35);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.btn-primary:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 10px rgba(251, 113, 133, 0.25);
+}
+.btn-primary:disabled {
+  opacity: 0.55;
+}
+
+.btn-secondary {
+  background: white;
+  color: #fb7185;
+  border: 2px solid #fecdd3;
+  border-radius: 999px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 13px 28px;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.btn-secondary:active {
+  transform: scale(0.97);
+}
+
+/* カード */
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 2px 24px rgba(251, 113, 133, 0.08);
+}
+
+/* スクロールバー非表示 */
+::-webkit-scrollbar { display: none; }
