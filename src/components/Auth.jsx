@@ -29,7 +29,7 @@ export default function Auth() {
       } else if (err.message?.includes('User already registered')) {
         setError('このメールはすでに登録されてるよ。ログインしてみてね🌸')
       } else {
-        setError(`エラー: ${err.message}`)
+        setError('エラーが起きたよ。もう一度試してみてね🙏')
       }
     } finally {
       setLoading(false)
